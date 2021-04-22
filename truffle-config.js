@@ -3,12 +3,12 @@ const path = require("path");
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
-  contracts_build_directory: path.join(__dirname, "client/src/contracts"),
-  networks: {
-    develop: {
-      port: 8545
-    }
-  },
+  // contracts_build_directory: path.join(__dirname, "client/src/contracts"),
+  // networks: {
+  //   develop: {
+  //     port: 8545
+  //   }
+  // },
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.

@@ -8,16 +8,14 @@ contract REToken is ERC721{
         mapping(string => uint8) hashes;
         mapping(uint256 => string) private _tokenURIs;
         
-    constructor() public ERC721("RealEstateToken", "RET") {}
+    constructor() ERC721("RealEstateToken", "RET") public {}
     
     function _setTokenURI(uint256 tokenId, string memory _tokenURI) internal virtual {
             require(_exists(tokenId), "ERC721Metadata: URI set of nonexistent token");
             _tokenURIs[tokenId] = _tokenURI;
         }
 
-    function awardItem(address recipient, string memory hash, string memory metadata)
-        public
-        returns (uint256)
+    function awardItem(address recipient, string memory hash, string memory metadata) public returns (uint256)
     {
         require(hashes[hash] != 1);
         hashes[hash] = 1;
