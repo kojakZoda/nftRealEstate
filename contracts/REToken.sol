@@ -15,10 +15,12 @@ contract REToken is ERC721{
         mapping(uint256=>Transaction) transactions;
         Counters.Counter private _transactionIds;
         
-        mapping(address=>bool)  _sellers;
-        mapping(address=>bool)  _buyers;
+        //mapping(address=>bool)  _sellers;
+        //mapping(address=>bool)  _buyers;
         Transaction tr;
-        
+        Confirmation[] _buyers;
+        Confirmation[] _sellers;
+        Confirmation cs;
         
     struct Estate{
         uint id;
@@ -32,10 +34,15 @@ contract REToken is ERC721{
     }
     
     struct Transaction{
-        address adminCertifier;
-        bool approvedByAdmin;
-        mapping(address => bool) sellers;
-        mapping(address => bool) buyers;
+        Confirmation adminCertifier;
+        bool approved;
+        Confirmation[] sellers;
+        Confirmation[] buyers;
+    }
+    
+    struct Confirmation{
+        address user;
+        bool approved;
     }
     
         
@@ -53,28 +60,55 @@ contract REToken is ERC721{
         Estate memory newEstate = estates[index-1];
         newEstate.approved = true;
         estates[index-1] = newEstate;
+        //awardItem("test", )
     }
     
     
     
     function createTransactionEstate(address[] memory recipients, uint id) public{
-        
+        delete _buyers;
+        delete _sellers;
         //Transaction memory t;
         Estate memory e = estates[id-1];
+        //Confirmation[] memory _sellers;
+        //_buyers = new Confirmation[](recipients.length);
         for(uint i = 0; i<e.owners.length; i++){
-            tr.sellers[e.owners[i]] = false;
+            /*Confirmation memory cs = Confirmation({
+                user: e.owners[i],
+                approved: false
+            });*/
+            //_sellers.push(cs);
             //_sellers[e.owners[i]] = false;
+            cs.user = e.owners[i];
+            cs.approved = false;
+             _sellers[i] =cs;
         }
         for(uint i = 0; i<recipients.length; i++){
-            tr.buyers[recipients[i]] = false;
+            //tr.buyers[recipients[i]] = false;
             //_buyers[recipients[i]] = false;
+            Confirmation memory cb = Confirmation({
+                user: recipients[i],
+                approved: false
+            });
+            _buyers[i] =cb;
         }
-        /*tr = Transaction({
+        Confirmation memory c = Confirmation({
+            user: address(0x0),
+            approved: false
+        });
+        /*Transaction memory tr = Transaction({
+            adminCertifier: c,
             sellers : _sellers,
             buyers : _buyers,
-            approvedByAdmin : false
+            approved : false
         });*/
+        tr.adminCertifier = c;
+        tr.sellers = _sellers;
+        tr.buyers = _buyers;
+        tr.approved = false;
         //transactions.push(tr);
+        
+        
         transactions[_transactionIds.current()] = tr;
         _transactionIds.increment();
     }
@@ -101,7 +135,7 @@ contract REToken is ERC721{
             _tokenURIs[tokenId] = _tokenURI;
         }
 
-    function awardItem(address recipient, string memory hash, string memory metadata) private
+    function awardItem(string memory hash, string memory metadata) private
         returns (uint256)
     {
         require(hashes[hash] != 1);
