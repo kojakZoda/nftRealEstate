@@ -11,7 +11,8 @@ contract REToken is ERC721{
         mapping (address => bool) isAdmin;
         mapping(bytes32 => Estate) estateList;
         Estate[] estates;
-        Transaction[] transactions;
+        //Transaction[] transactions;
+        mapping(uint256=>Transaction) transactions;
         Counters.Counter private _transactionIds;
         
         mapping(address=>bool)  _sellers;
@@ -61,19 +62,21 @@ contract REToken is ERC721{
         //Transaction memory t;
         Estate memory e = estates[id-1];
         for(uint i = 0; i<e.owners.length; i++){
-            //t.sellers[e.owners[i]] = false;
-            _sellers[e.owners[i]] = false;
+            tr.sellers[e.owners[i]] = false;
+            //_sellers[e.owners[i]] = false;
         }
         for(uint i = 0; i<recipients.length; i++){
-            //t.buyers[recipients] = false;
-            _buyers[recipients[i]] = false;
+            tr.buyers[recipients[i]] = false;
+            //_buyers[recipients[i]] = false;
         }
-        tr = Transaction({
+        /*tr = Transaction({
             sellers : _sellers,
             buyers : _buyers,
             approvedByAdmin : false
-        });
-        transactions.push(tr);
+        });*/
+        //transactions.push(tr);
+        transactions[_transactionIds.current()] = tr;
+        _transactionIds.increment();
     }
     
     //TODO
@@ -105,22 +108,23 @@ contract REToken is ERC721{
         hashes[hash] = 1;
         _tokenIds.increment();
         uint256 newItemId = _tokenIds.current();
-        _mint(this, newItemId);
+        _mint(address(this), newItemId);
         _setTokenURI(newItemId, metadata);
         return newItemId;
     }
     
-    function submitEstate(string memory addPostal, string memory area, string[] memory specifications, string[] memory worksDone, address[] memory actuelOwners)
+    function submitEstate(string memory addPostal, string memory area, string[] memory specifications, string[] memory worksDone, address[] memory actualOwners)
     public returns(string memory){
         //address[] memory owners = new address[](1);
+        address[] memory oldOwners = new address[](0);
         //owners[0] = msg.sender;
         Estate memory e = Estate({
             id: estates.length + 1,
             addr: addPostal,
             area: area,
             specifications: specifications,
-            oldOwners : address[],
-            actuelOwners: actuelOwners,
+            oldOwners : oldOwners,
+            owners: actualOwners,
             worksDone : worksDone,
             approved : false
         });
