@@ -28,9 +28,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/kojak/Workspace/School/nftRealEstate2/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/kojak/Workspace/School/nftRealEstate2/contracts/SimpleStorage.sol\":{\"keccak256\":\"0x4ceeb60ceab71065c2b31aadb2fbfdf8053be12c31705f68281699bf5876de43\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7154b1dd61718c8994fcfa21fef189e64620f41ddbeaf8cb8637132ee9a1e23f\",\"dweb:/ipfs/QmUkTYQJHcp2AF8mtALJ4mVNbvK86guUQGHdvxC3TsSb3c\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061012f806100206000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c14604f575b600080fd5b604d600480360381019060499190608f565b6069565b005b60556073565b6040516060919060c2565b60405180910390f35b8060008190555050565b60008054905090565b60008135905060898160e5565b92915050565b60006020828403121560a057600080fd5b600060ac84828501607c565b91505092915050565b60bc8160db565b82525050565b600060208201905060d5600083018460b5565b92915050565b6000819050919050565b60ec8160db565b811460f657600080fd5b5056fea264697066735822122017eeb0f1f77afa99bec00b21ad6c7addf366faea93bde592f14642a71e8a178b64736f6c63430008000033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c14604f575b600080fd5b604d600480360381019060499190608f565b6069565b005b60556073565b6040516060919060c2565b60405180910390f35b8060008190555050565b60008054905090565b60008135905060898160e5565b92915050565b60006020828403121560a057600080fd5b600060ac84828501607c565b91505092915050565b60bc8160db565b82525050565b600060208201905060d5600083018460b5565b92915050565b6000819050919050565b60ec8160db565b811460f657600080fd5b5056fea264697066735822122017eeb0f1f77afa99bec00b21ad6c7addf366faea93bde592f14642a71e8a178b64736f6c63430008000033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/kojak/Workspace/School/nftRealEstate2/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/kojak/Workspace/School/nftRealEstate2/contracts/SimpleStorage.sol\":{\"keccak256\":\"0x4ceeb60ceab71065c2b31aadb2fbfdf8053be12c31705f68281699bf5876de43\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7154b1dd61718c8994fcfa21fef189e64620f41ddbeaf8cb8637132ee9a1e23f\",\"dweb:/ipfs/QmUkTYQJHcp2AF8mtALJ4mVNbvK86guUQGHdvxC3TsSb3c\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061012f806100206000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c14604f575b600080fd5b604d600480360381019060499190608f565b6069565b005b60556073565b6040516060919060c2565b60405180910390f35b8060008190555050565b60008054905090565b60008135905060898160e5565b92915050565b60006020828403121560a057600080fd5b600060ac84828501607c565b91505092915050565b60bc8160db565b82525050565b600060208201905060d5600083018460b5565b92915050565b6000819050919050565b60ec8160db565b811460f657600080fd5b5056fea264697066735822122091c4305d3e767b665903dab677b7e358f9a58431bdca39c2ecf1f1868460090e64736f6c63430008040033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c14604f575b600080fd5b604d600480360381019060499190608f565b6069565b005b60556073565b6040516060919060c2565b60405180910390f35b8060008190555050565b60008054905090565b60008135905060898160e5565b92915050565b60006020828403121560a057600080fd5b600060ac84828501607c565b91505092915050565b60bc8160db565b82525050565b600060208201905060d5600083018460b5565b92915050565b6000819050919050565b60ec8160db565b811460f657600080fd5b5056fea264697066735822122091c4305d3e767b665903dab677b7e358f9a58431bdca39c2ecf1f1868460090e64736f6c63430008040033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -627,7 +627,7 @@
     }
   ],
   "sourceMap": "57:176:2:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "57:176:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;104:53;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;161:70;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;104:53;151:1;138:10;:14;;;;104:53;:::o;161:70::-;197:4;216:10;;209:17;;161:70;:::o;7:139:15:-;;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;59:87;;;;:::o;152:262::-;;260:2;248:9;239:7;235:23;231:32;228:2;;;276:1;273;266:12;228:2;319:1;344:53;389:7;380:6;369:9;365:22;344:53;:::i;:::-;334:63;;290:117;218:196;;;;:::o;420:118::-;507:24;525:5;507:24;:::i;:::-;502:3;495:37;485:53;;:::o;544:222::-;;675:2;664:9;660:18;652:26;;688:71;756:1;745:9;741:17;732:6;688:71;:::i;:::-;642:124;;;;:::o;772:77::-;;838:5;827:16;;817:32;;;:::o;855:122::-;928:24;946:5;928:24;:::i;:::-;921:5;918:35;908:2;;967:1;964;957:12;908:2;898:79;:::o",
+  "deployedSourceMap": "57:176:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;104:53;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;161:70;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;104:53;151:1;138:10;:14;;;;104:53;:::o;161:70::-;197:4;216:10;;209:17;;161:70;:::o;7:139:15:-;53:5;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;59:87;;;;:::o;152:262::-;211:6;260:2;248:9;239:7;235:23;231:32;228:2;;;276:1;273;266:12;228:2;319:1;344:53;389:7;380:6;369:9;365:22;344:53;:::i;:::-;334:63;;290:117;218:196;;;;:::o;420:118::-;507:24;525:5;507:24;:::i;:::-;502:3;495:37;485:53;;:::o;544:222::-;637:4;675:2;664:9;660:18;652:26;;688:71;756:1;745:9;741:17;732:6;688:71;:::i;:::-;642:124;;;;:::o;772:77::-;809:7;838:5;827:16;;817:32;;;:::o;855:122::-;928:24;946:5;928:24;:::i;:::-;921:5;918:35;908:2;;967:1;964;957:12;908:2;898:79;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract SimpleStorage {\n  uint storedData;\n\n  function set(uint x) public {\n    storedData = x;\n  }\n\n  function get() public view returns (uint) {\n    return storedData;\n  }\n}\n",
   "sourcePath": "/Users/kojak/Workspace/School/nftRealEstate2/contracts/SimpleStorage.sol",
   "ast": {
@@ -663,6 +663,7 @@
           160
         ],
         "name": "SimpleStorage",
+        "nameLocation": "66:13:2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
@@ -670,6 +671,7 @@
             "id": 141,
             "mutability": "mutable",
             "name": "storedData",
+            "nameLocation": "89:10:2",
             "nodeType": "VariableDeclaration",
             "scope": 160,
             "src": "84:15:2",
@@ -748,6 +750,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "set",
+            "nameLocation": "113:3:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 144,
@@ -758,6 +761,7 @@
                   "id": 143,
                   "mutability": "mutable",
                   "name": "x",
+                  "nameLocation": "122:1:2",
                   "nodeType": "VariableDeclaration",
                   "scope": 151,
                   "src": "117:6:2",
@@ -826,6 +830,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "get",
+            "nameLocation": "170:3:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 152,
@@ -842,6 +847,7 @@
                   "id": 154,
                   "mutability": "mutable",
                   "name": "",
+                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 159,
                   "src": "197:4:2",
@@ -874,7 +880,8 @@
           }
         ],
         "scope": 161,
-        "src": "57:176:2"
+        "src": "57:176:2",
+        "usedErrors": []
       }
     ],
     "src": "32:202:2"
@@ -912,6 +919,7 @@
           160
         ],
         "name": "SimpleStorage",
+        "nameLocation": "66:13:2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
@@ -919,6 +927,7 @@
             "id": 141,
             "mutability": "mutable",
             "name": "storedData",
+            "nameLocation": "89:10:2",
             "nodeType": "VariableDeclaration",
             "scope": 160,
             "src": "84:15:2",
@@ -997,6 +1006,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "set",
+            "nameLocation": "113:3:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 144,
@@ -1007,6 +1017,7 @@
                   "id": 143,
                   "mutability": "mutable",
                   "name": "x",
+                  "nameLocation": "122:1:2",
                   "nodeType": "VariableDeclaration",
                   "scope": 151,
                   "src": "117:6:2",
@@ -1075,6 +1086,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "get",
+            "nameLocation": "170:3:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 152,
@@ -1091,6 +1103,7 @@
                   "id": 154,
                   "mutability": "mutable",
                   "name": "",
+                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 159,
                   "src": "197:4:2",
@@ -1123,18 +1136,19 @@
           }
         ],
         "scope": 161,
-        "src": "57:176:2"
+        "src": "57:176:2",
+        "usedErrors": []
       }
     ],
     "src": "32:202:2"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-04-21T18:56:19.428Z",
+  "updatedAt": "2021-04-22T14:39:05.777Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
